@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: 'https://github.io/eridev14/dictionary-web-app/',
+  base: '/dictionary-web-app/',
 })
