@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  #root {
+    padding: 1rem .7rem;
+  }
+}
+
 .light-mode {
   --bg-color: #f5f5f5;
   --color-main: #333;
