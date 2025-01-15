@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   base: '/dictionary-web-app/',
-  build: {
-    outDir: 'dist',
-  },
 })
