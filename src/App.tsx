@@ -126,7 +126,7 @@ function App() {
       ) : error ? (
         <p>{message}</p>
       ) : data ? (
-        <WordDictionary data={data} />
+        <WordDictionary data={data} mode={mode}/>
       ) : null}
     </main>
   );

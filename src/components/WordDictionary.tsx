@@ -3,9 +3,10 @@ import { Dictionary } from "../types";
 
 interface DictionaryProps {
   data: Dictionary | null;
+  mode: boolean;
 }
 
-export const WordDictionary = ({ data }: DictionaryProps) => {
+export const WordDictionary = ({ data, mode }: DictionaryProps) => {
   async function handleClickAudio() {
     const mapAudio = new Set<string>();
 
@@ -57,7 +58,7 @@ export const WordDictionary = ({ data }: DictionaryProps) => {
           </span>
         </section>
         <button className="word__btn-audio" onClick={handleClickAudio}>
-          <IconPlay color="#FFFFFF" />
+          <IconPlay color={mode ? "#FFFFFF" : "#aaa"} />
         </button>
       </section>
 
