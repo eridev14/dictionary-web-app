@@ -114,7 +114,7 @@ export const WordDictionary = ({ data }: DictionaryProps) => {
       ))}
 
       <div className="source">
-        <span>source</span>
+        <span>source: </span>
         <a href={data?.sourceUrls[0]} className="source__link">
           {data?.sourceUrls[0]}
         </a>

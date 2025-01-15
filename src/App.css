@@ -261,17 +261,32 @@
 }
 
 .source {
+  width: 100%;
   text-align: start;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
+  word-wrap: break-word;
 }
 
 .source__link {
+  display: block;
   text-transform: none;
   text-decoration: none;
   color: inherit;
   text-decoration: underline;
+  white-space: wrap;
 }
+
+/* media queries link*/
+
+@media screen and (max-width: 500px) {
+  .source__link {
+    width: 100%;
+  }
+  
+}
+
 
 /* estyles font compenent */
 
